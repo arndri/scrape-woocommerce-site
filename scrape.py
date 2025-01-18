@@ -75,8 +75,7 @@ def get_product_data(page_num):
         print(f"Sleeping in product for {delay:.2f} seconds...\n")
         time.sleep(delay)
 
-# Loop through all 104 pages
-for page_num in range(3, 5):  # From 1 to 104
+for page_num in range(3, 5): 
     get_product_data(page_num)
     delay = random.uniform(3, 10)
     print(f"Sleeping in page {page_num} for {delay:.2f} seconds...\n")
